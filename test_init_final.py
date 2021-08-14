@@ -2240,7 +2240,7 @@ class mainCog(commands.Cog):
 			msg = ctx.message.content[len(ctx.invoked_with)+1:]
 			sayMessage = msg
 			try:
-				await MakeSound(ctx.message.author +', ' + sayMessage, './sound/say')
+				await MakeSound(ctx.message +', ' + sayMessage, './sound/say')
 			except:
 				await ctx.send( f"```음성파일 생성에 실패하였습니다.!(amazon polly 사용시 키 값을 확인하세요!)```")
 				return
