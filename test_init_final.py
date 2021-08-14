@@ -2237,7 +2237,7 @@ class mainCog(commands.Cog):
 			if basicSetting[21] != "1":
 				return await ctx.send('```보이스를 사용하지 않도록 설정되어 있습니다.```', tts=False)
 
-			msg = ctx.message.content[len(ctx.invoked_with)+1:]
+			msg = ctx.message.content[len( )+1:]
 			sayMessage = msg
 			try:
 				await MakeSound(ctx.message.author.display_name +'님이, ' + sayMessage, './sound/say')
